@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--main-font);
+    overflow-x: hidden;
 }
-
 :root {
     --main-font: 'Inter', sans-serif;
     --bg-color-one: #E5B712;
@@ -14,4 +13,99 @@
     --bg-color-three: #eb6a20a4;
     --title-color: #000000;
     --paragraph-color: #373737; 
+    --font-size-title-sm-md-screens: 40px;
+    --font-size-paragraph-sm-md-screens: 20px;
+    --font-size-secondary-sm-md-screens: 16px;
 }
+
+#nav-bar {
+    background-color: var(--bg-color-one);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+#menu-nav-box-sm-md-screens {
+    list-style: none;
+}
+#menu-button {
+    display: none;
+}
+.menu-itens {
+    text-decoration: none;
+    color: var(--title-color);
+    padding: 5px;
+}
+
+#home {
+    padding-top: 75px;
+}
+
+@media (max-width: 425px) {
+    main {
+        padding: 0 30px;
+    }
+    #menu-button {
+        background: none;
+        border: none;
+        display: inline-block;
+        padding: 5px 0 0 30px;
+    }
+    #menu-button:hover {
+        cursor: pointer;
+    }
+    #menu-button-icon {
+        color: var(--title-color);
+        width: 40px;
+    }
+    #menu-nav-box-sm-md-screens {
+        background-color: var(--bg-color-two);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-itens-box {
+        padding: 5px 0;
+    }
+    .menu-itens {
+        padding: 10px 0;
+    }
+    #home, #serviços {
+        padding-bottom: 55px;
+    }
+    #title-hero-row {
+        font-size: var(--font-size-title-sm-md-screens);
+    }
+    #paragraph-hero-row{
+        font-size: var(--font-size-paragraph-sm-md-screens);
+        color: var(--paragraph-color);
+    }
+    #secondary-paragraph-hero-row{
+        font-size: var(--font-size-secondary-sm-md-screens);
+        font-weight: 300;
+        font-style: italic;
+    }
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row {
+        padding-bottom: 20px;
+    }
+    #foto-hero-row {
+        display: none;
+    }
+    #instagram-button {
+        height: 50px;
+        background-color: var(--bg-color-two);
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: 700;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+    #instagram-button-text {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
