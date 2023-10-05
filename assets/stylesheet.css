@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--main-font);
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 :root {
     --main-font: 'Inter', sans-serif;
@@ -14,6 +14,7 @@
     --title-color: #000000;
     --paragraph-color: #373737; 
     --font-size-title-sm-md-screens: 40px;
+    --font-size-title-secondary: 30px;
     --font-size-paragraph-sm-md-screens: 20px;
     --font-size-secondary-sm-md-screens: 16px;
 }
@@ -40,6 +41,41 @@
 
 #home {
     padding-top: 75px;
+}
+#paragraph-hero-row{
+    color: var(--paragraph-color);
+}
+#secondary-paragraph-hero-row{
+    font-weight: 300;
+    font-style: italic;
+}
+#instagram-button {
+    height: 50px;
+    background-color: var(--bg-color-two);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#instagram-button-text {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.title-bolos{
+    font-size: var(--font-size-title-secondary);
+}
+.serviços-fotos{
+    width: 300px;
+    height: 196px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.serviços-descrição{
+    font-size: var(--font-size-paragraph-sm-md-screens);
+    color: var(--paragraph-color);
 }
 
 @media (max-width: 425px) {
@@ -72,6 +108,7 @@
     .menu-itens {
         padding: 10px 0;
     }
+
     #home, #serviços {
         padding-bottom: 55px;
     }
@@ -84,28 +121,23 @@
     }
     #secondary-paragraph-hero-row{
         font-size: var(--font-size-secondary-sm-md-screens);
-        font-weight: 300;
-        font-style: italic;
     }
-    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row {
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição {
         padding-bottom: 20px;
     }
     #foto-hero-row {
         display: none;
     }
-    #instagram-button {
-        height: 50px;
-        background-color: var(--bg-color-two);
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        font-size: 30px;
-        font-weight: 700;
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+
+    #title-serviços {
+        font-size: var(--font-size-title-sm-md-screens);
+        text-align: center;
     }
-    #instagram-button-text {
-        color: #FFF;
-        text-decoration: none;
+    hr, .serviços-fotos {
+        margin-bottom: 20px;
+    }
+    .serviços-fotos{
+        width: 100%;
     }
 }
 
