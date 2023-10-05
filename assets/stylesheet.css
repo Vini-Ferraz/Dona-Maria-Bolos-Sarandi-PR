@@ -70,7 +70,7 @@
 }
 .serviços-fotos{
     width: 300px;
-    height: 50vw;
+    height: 200px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -237,10 +237,10 @@ footer {
         height: 475px;
         border-radius: 10px;
     }
-    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços{
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição-box{
         padding-bottom: 20px;
     }
-    hr{
+    hr, .serviços-fotos{
         margin-bottom: 20px;
     }
     #title-hero-row {
@@ -255,6 +255,44 @@ footer {
     #title-serviços, #sobre-nós-title, #contato-title {
         font-size: var(--font-size-title-sm-md-screens);
         text-align: center;
+    }
+    #serviços-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .serviços-descrição-box{
+        width: 300px;
+    }
+    .serviços-descrição{
+        text-align: justify;
+        line-height: 30px;
+    }
+    .title-bolos {
+        text-align: center;
+    }
+
+    #sobre-nós-title{
+        padding-top: 125px;
+        padding-bottom: 20px;
+    }
+    #sobre-nós-paragraph{
+        font-size: var(--font-size-paragraph-sm-md-screens);
+        text-align: center;
+        line-height: 35px;
+        padding-bottom: 125px;;
+    }
+
+    #contatos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 125px;
+    }
+    #contacts-text-box{
+        width: 400px;
     }
 }
 
