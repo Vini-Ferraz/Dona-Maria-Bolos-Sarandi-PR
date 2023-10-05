@@ -45,7 +45,7 @@
 #paragraph-hero-row{
     color: var(--paragraph-color);
 }
-#secondary-paragraph-hero-row{
+#secondary-paragraph-hero-row, #contato-paragraph{
     font-weight: 300;
     font-style: italic;
 }
@@ -82,6 +82,7 @@
     main {
         padding: 0 30px;
     }
+    
     #menu-button {
         background: none;
         border: none;
@@ -122,22 +123,43 @@
     #secondary-paragraph-hero-row{
         font-size: var(--font-size-secondary-sm-md-screens);
     }
-    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição {
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição, #sobre-nós-title, #sobre-nós-paragraph {
         padding-bottom: 20px;
     }
     #foto-hero-row {
         display: none;
     }
 
-    #title-serviços {
+    #title-serviços, #sobre-nós-title, #contato-title {
         font-size: var(--font-size-title-sm-md-screens);
         text-align: center;
     }
-    hr, .serviços-fotos {
+    hr, .serviços-fotos, #sobre-nós {
         margin-bottom: 20px;
     }
     .serviços-fotos{
         width: 100%;
+    }
+
+    #sobre-nós-paragraph{
+        font-size: var(--font-size-paragraph-sm-md-screens);
+        text-align: justify;
+        line-height: 35px;
+    }
+
+    #contato-title, #contato-paragraph{
+        padding-bottom: 50px;
+    }
+    #contato-title{
+        padding-top: 30px;
+    }
+    #contato-paragraph {
+        font-size: var(--font-size-secondary-sm-md-screens);
+        color: var(--paragraph-color);
+        text-align: center;
+    }
+    .social-media-name{
+        display: none;
     }
 }
 
