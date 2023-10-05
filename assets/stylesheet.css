@@ -83,7 +83,7 @@ footer {
     background-color: var(--bg-color-one);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     main, footer > article > hr {
         padding: 0 30px;
     }
@@ -199,7 +199,7 @@ footer {
     }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 700px) {
     #menu-nav-box-sm-md-screens {
         display: flex;
         justify-content: space-evenly;
@@ -237,7 +237,7 @@ footer {
         height: 475px;
         border-radius: 10px;
     }
-    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição-box{
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição-box, #contato-title, #phone, #copy{
         padding-bottom: 20px;
     }
     hr, .serviços-fotos{
@@ -288,11 +288,58 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-bottom: 125px;
     }
     #contacts-text-box{
         width: 400px;
+    }
+    #contato-title{
+        text-align: start;
+    }
+    a {
+        text-decoration: none;
+    }
+    .social-media-line{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .social-media-name:hover {
+        color: var(--bg-color-two);
+    }
+
+    .social-media-name{
+        color: var(--title-color);
+        font-size: var(--font-size-title-sm-md-screens);
+        font-weight: bold;
+        padding-right: 25px;
+    }
+    .social-media-icon{
+        height: 40px;
+    }
+
+    #bussines-name{
+        font-size: var(--font-size-title-secondary);
+        text-align: center;
+        padding: 20px 0;
+    }
+    #phone {
+        font-size: var(--font-size-paragraph-sm-md-screens);
+        text-align: center;
+    }
+    #line-footer, hr {
+        border: 1px solid black;
+    }
+    #line-footer {
+        width: 75vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #copy {
+        text-align: center;
     }
 }
 
