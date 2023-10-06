@@ -19,6 +19,9 @@
     --font-size-title-secondary: 30px;
     --font-size-paragraph-sm-md-screens: 20px;
     --font-size-secondary-sm-md-screens: 16px;
+    --font-size-title-lg-screens: 45px;
+    --font-size-paragraph-lg-screens: 25px;
+    --font-size-secondary-lg-screens: 21px;
 }
 
 #nav-bar {
@@ -38,10 +41,11 @@
     text-decoration: none;
     color: var(--title-color);
     padding: 5px;
+    font-size: var(--font-size-paragraph-sm-md-screens);
 }
 
 #home {
-    padding-top: 75px;
+    padding-top: 100px;
 }
 #paragraph-hero-row{
     color: var(--paragraph-color);
@@ -199,7 +203,7 @@ footer {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
     #menu-nav-box-sm-md-screens {
         display: flex;
         justify-content: space-evenly;
@@ -210,6 +214,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        height: 60px;
     }
     main, footer > article > hr {
         padding: 0 65px;
@@ -340,6 +345,68 @@ footer {
 
     #copy {
         text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    #menu-nav-box-sm-md-screens {
+        width: 50%;
+    }
+    .menu-itens {
+        padding: 6px;
+    }
+
+    #title-hero-row {
+        font-size: var(--font-size-title-lg-screens);
+    }
+    #text-hero-row{
+        width: 45vw;
+    }
+    #paragraph-hero-row{
+        font-size: var(--font-size-paragraph-lg-screens);
+    }
+    #secondary-paragraph-hero-row{
+        font-size: var(--font-size-secondary-lg-screens);
+    }
+    #foto-hero-row{
+        height: 495px;
+        width: 420px;
+        border-radius: 10px;
+    }
+
+    #title-serviços, #sobre-nós-title, #contato-title {
+        font-size: var(--font-size-title-lg-screens);
+    }
+    #contato-title{
+        padding-bottom: 30px;
+    }
+
+    #sobre-nós{
+        padding: 0;
+        margin: 0;
+    }
+    #sobre-nós-paragraph{
+        font-size: var(--font-size-paragraph-lg-screens);
+        line-height: 50px;
+    }
+
+    #contato-paragraph {
+        font-size: var(--font-size-secondary-lg-screens);
+    }
+    #contatos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    #contacts-text-box{
+        width: 500px;
+    }
+    
+    footer {
+        padding: 45px 0;
     }
 }
 
