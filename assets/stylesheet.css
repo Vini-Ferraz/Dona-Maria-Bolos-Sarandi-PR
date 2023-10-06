@@ -113,10 +113,11 @@ footer {
         justify-content: center;
     }
     .menu-itens-box {
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .menu-itens {
-        padding: 10px 0;
+        color: #FFF;
+        font-size: 18px;
     }
 
     #home, #serviços {
