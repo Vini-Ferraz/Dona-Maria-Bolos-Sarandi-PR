@@ -8,6 +8,15 @@
     scroll-behavior: smooth;
     /*overflow-x: hidden;*/
 }
+@keyframes caixa-aviso {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 :root {
     --main-font: 'Inter', sans-serif;
     --bg-color-one: #E5B712;
@@ -88,6 +97,24 @@ footer {
 }
 
 @media (max-width: 700px) {
+    #aviso{
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        height: 75vw;
+        width: 75vw;
+        padding: 5vw;
+        background-color: red;
+        border-radius: 1vw;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        opacity: 0%;
+        animation-name: caixa-aviso;
+        animation-duration: 5s;
+    }
+
     main, footer > article > hr {
         padding: 0 30px;
     }
@@ -205,6 +232,24 @@ footer {
 }
 
 @media (min-width: 701px) {
+    #aviso{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 35vw;
+        width: 35vw;
+        padding: 2vw;
+        background-color: red;
+        border-radius: 1vw;
+        font-size: 2vw;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        opacity: 0%;
+        animation-name: caixa-aviso;
+        animation-duration: 5s;
+    }
+
     #menu-nav-box-sm-md-screens {
         display: flex;
         justify-content: space-evenly;
@@ -350,6 +395,24 @@ footer {
 }
 
 @media (min-width: 1000px) {
+    #aviso{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 30vw;
+        width: 30vw;
+        padding: 1vw;
+        background-color: red;
+        border-radius: 1vw;
+        font-size: 1.7vw;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        opacity: 0%;
+        animation-name: caixa-aviso;
+        animation-duration: 5s;
+    }
+
     #menu-nav-box-sm-md-screens {
         width: 50%;
     }
@@ -383,12 +446,13 @@ footer {
     }
 
     #sobre-nós{
-        padding: 0;
+        padding: 0 120px;
         margin: 0;
     }
     #sobre-nós-paragraph{
         font-size: var(--font-size-paragraph-lg-screens);
-        line-height: 50px;
+        line-height: 45px;
+
     }
 
     #contato-paragraph {
@@ -410,4 +474,3 @@ footer {
         padding: 45px 0;
     }
 }
-
