@@ -96,23 +96,26 @@ footer {
     background-color: var(--bg-color-one);
 }
 
-@media (max-width: 700px) {
-    #aviso{
+#aviso{
         position: absolute;
-        left: 50%;
-        top: 75%;
         transform: translate(-50%, -50%);
         height: 75vw;
         width: 75vw;
         padding: 5vw;
         background-color: red;
         border-radius: 1vw;
-        font-size: 5vw;
         color: rgb(0, 0, 0);
         text-align: center;
         opacity: 0%;
         animation-name: caixa-aviso;
-        animation-duration: 6s;
+        animation-duration: 7s;
+    }
+
+@media (max-width: 700px) {
+    #aviso{
+        left: 50%;
+        top: 40%;
+        font-size: 5vw;
     }
 
     main, footer > article > hr {
@@ -233,21 +236,11 @@ footer {
 
 @media (min-width: 701px) {
     #aviso{
-        position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        height: 35vw;
-        width: 35vw;
-        padding: 2vw;
-        background-color: red;
-        border-radius: 1vw;
-        font-size: 2vw;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        opacity: 0%;
-        animation-name: caixa-aviso;
-        animation-duration: 6s;
+        height: 50vw;
+        width: 50vw;
+        font-size: 3vw;
     }
 
     #menu-nav-box-sm-md-screens {
@@ -396,21 +389,11 @@ footer {
 
 @media (min-width: 1000px) {
     #aviso{
-        position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
         height: 30vw;
         width: 30vw;
-        padding: 1vw;
-        background-color: red;
-        border-radius: 1vw;
         font-size: 1.7vw;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        opacity: 0%;
-        animation-name: caixa-aviso;
-        animation-duration: 6s;
     }
 
     #menu-nav-box-sm-md-screens {
