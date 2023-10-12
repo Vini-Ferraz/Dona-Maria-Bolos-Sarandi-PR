@@ -6,7 +6,6 @@
     font-family: var(--main-font);
     transition: 350ms ease-in;
     scroll-behavior: smooth;
-    /*overflow-x: hidden;*/
 }
 @keyframes caixa-aviso {
     0% {
@@ -19,9 +18,8 @@
 }
 :root {
     --main-font: 'Inter', sans-serif;
-    --bg-color-one: #E5B712;
-    --bg-color-two: #E55E12;
-    --bg-color-three: #eb6a20a4;
+    --bg-color-one: #967df8;
+    --bg-color-two: #f56989;
     --title-color: #000000;
     --paragraph-color: #373737; 
     --font-size-title-sm-md-screens: 40px;
@@ -96,6 +94,10 @@ a > #instagram-button:hover{
     color: var(--paragraph-color);
 }
 
+#sobre-nós{
+    background: linear-gradient(99deg, var(--bg-color-two) -0.98%, var(--bg-color-one) 100%); 
+}
+
 footer {
     background-color: var(--bg-color-one);
 }
@@ -122,8 +124,12 @@ footer {
         font-size: 5vw;
     }
 
-    main, footer > article > hr {
+    #serviços, #contatos, #sobre-nos-conteudo, footer > article > hr {
         padding: 0 30px;
+    }
+    #home{
+        padding-right: 30px;
+        padding-left: 30px;
     }
     
     #menu-button {
@@ -168,10 +174,10 @@ footer {
     #secondary-paragraph-hero-row{
         font-size: var(--font-size-secondary-sm-md-screens);
     }
-    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição, #sobre-nós-title, #sobre-nós-paragraph, #phone, #copy {
+    #title-hero-row, #paragraph-hero-row, #secondary-paragraph-hero-row, #title-serviços, .title-bolos, .serviços-descrição, #sobre-nós-title, #phone, #copy {
         padding-bottom: 20px;
     }
-    #foto-hero-row {
+    #foto-hero-row, #sobre-nos-img {
         display: none;
     }
 
@@ -190,6 +196,10 @@ footer {
         font-size: var(--font-size-paragraph-sm-md-screens);
         text-align: justify;
         line-height: 35px;
+    }
+    #sobre-nos-conteudo{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #contato-title, #contato-paragraph, #social-media-icon-box{
@@ -259,8 +269,12 @@ footer {
         justify-content: space-around;
         height: 60px;
     }
-    main, footer > article > hr {
-        padding: 0 65px;
+    #serviços, #contatos, #sobre-nos-conteudo, footer > article > hr {
+        padding: 0 50px;
+    }
+    #home{
+        padding-right: 50px;
+        padding-left: 50px;
     }
     .menu-itens:hover {
         background-color: var(--bg-color-two);
@@ -270,7 +284,7 @@ footer {
         box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     }
 
-    #home{
+    #home, #sobre-nós{
         margin-bottom: 65px;
     }
     #home{
@@ -331,13 +345,16 @@ footer {
         line-height: 35px;
         padding-bottom: 125px;;
     }
+    #sobre-nos-img {
+        display: none;
+    }
 
     #contatos{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 125px;
+        padding-bottom: 65px;
     }
     #contacts-text-box{
         width: 400px;
@@ -420,9 +437,17 @@ footer {
         font-size: var(--font-size-secondary-lg-screens);
     }
     #foto-hero-row{
-        height: 495px;
         width: 420px;
+        max-width: 100%;
         border-radius: 10px;
+        object-fit: cover;
+    }
+    #sobre-nos-img{ 
+        width: 45%;
+        height: 100vh;
+        max-width: 100%;
+        object-fit: cover;
+        overflow-x: hidden;
     }
 
     #title-serviços, #sobre-nós-title, #contato-title {
@@ -433,13 +458,31 @@ footer {
     }
 
     #sobre-nós{
-        padding: 0 120px;
-        margin: 0;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #sobre-nos-conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    #sobre-nós-title{
+        padding-top: 0;
+        padding-bottom: 50px;
     }
     #sobre-nós-paragraph{
         font-size: var(--font-size-paragraph-lg-screens);
         line-height: 45px;
-
+        width: 50vw;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    #sobre-nos-img {
+        display: block;
     }
 
     #contato-paragraph {
@@ -450,8 +493,7 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-right: 30px;
-        padding-left: 30px;
+
     }
     #contacts-text-box{
         width: 500px;
